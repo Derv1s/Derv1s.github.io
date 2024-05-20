@@ -79,9 +79,15 @@ section {
   margin-bottom: 30px;
 }
 
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 h1,
 h2 {
   margin-bottom: 10px;
+  width: 100%;
 }
 
 .project-card {
@@ -92,23 +98,56 @@ h2 {
   display: flex;
   text-align: center;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
+  margin-right: 25px;
+}
+
+.project-card h3 {
+  text-shadow: 1px 1px 3px gray;
+}
+
+.project-card img {
+  width: 100%;
+  height: auto;
+}
+
+.project-card img:hover {
+  transform: scale(1.1);
+  transition: transform 0.5s;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 .project-card a {
   display: flex;
   justify-content: center;
-  align-items: center;
-  flex: auto;
   font-size: large;
   font-weight: bold;
   color: black;
   text-decoration: none;
-  margin: 3px;
   border-radius: 7px;
+  align-items: center;
+}
+
+.project-card .playBtn {
+  height: 15%;
 }
 
 .project-card a:hover {
   background-color: rgb(33, 50, 90);
   color: white;
+  text-shadow: 1px 1px 3px gray;
+}
+
+.project-card .playBtn:hover {
+  background-color: rgb(33, 50, 90);
+  color: white;
+  text-shadow: 1px 1px 3px gray;
+}
+
+/* footer */
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 30px;
+  text-align: center;
 }
